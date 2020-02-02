@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ying Jyun Lin Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'arail', 'Noto Sans TC', sans-serif;
+        }
+        a{
+            color:rgb(21, 44, 78)
+        }
+        a:hover{
+           text-decoration: none; 
+           color:rgb(138, 91, 117)
+        }
+      
+        body {
+            overflow-x: hidden;
+        }
+
+        
+        .mainDiva{
+            overflow: hidden;
+
+        }
+        
+        .main {
+            width: 25vw;
+            height: 100vh;
+            background: #ccc;
+            transition: 1s;
+            filter: grayscale(100%);  
+    
+        }
+        .main:hover{
+            width: 30vw;
+            filter: grayscale(0%);               
+        }
+
+       
+        .project1, .project3 {
+            animation: divdown 2.5s ease-in-out;
+        
+        }
+
+        .project2, .project4 {
+            animation: divup 2.5s ease-in-out;
+          
+
+        }
+        .project1{
+            background: url(images/web_1.jpg) center center no-repeat;
+        }
+        .project2{
+            background: url(images/APPMockUp.jpg) center center no-repeat;
+            background-size: cover;   
+        }
+        .project3{
+            background: url(images/suga-1-02.jpg) center center no-repeat;
+            background-size: cover;   
+
+        }
+        .aa{
+            position: absolute;
+            top:45vh;
+            transition: 1s;
+            background: rgba(255, 255, 255, 0.596);
+            width: 100%;
+            height:100px;
+            text-align: center;
+            line-height: 100px;
+            animation: opa 2.5s ease-in-out; 
+            animation-delay: 2.5s;
+            animation-fill-mode:forwards;
+            opacity: 0;
+        }
+
+      
+
+
+        @keyframes divdown {
+
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @keyframes divup {
+
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @keyframes opa{
+            
+            0% {
+                opacity: 0;
+                
+            }
+
+
+            100% {
+                opacity: 1;
+            
+            }
+        }
+    </style>
+
+</head>
+
+<body>  
+    
+        <div class="mainDiva d-flex">
+            <a href="https://yingjyunlin.github.io/index.html">
+                <div class="main project1">
+                    <h5 class="aa ">web</h5>
+                </div>
+            </a>
+            <a href="https://www.behance.net/gallery/90930401/-a-p-p">
+                <div class="main project2">
+                    <h5 class="aa ">app - UI</h5>
+                </div>
+            </a>
+            <a href="http://localhost/skate-store/J-index-c.php">
+                <div class="main project3">
+                    <h5 class="aa ">Project</h5>
+                </div>
+            </a>
+            <a href="4">
+                <div class="main project4">
+                   <h5 class="aa ">about me</h5>
+                </div>
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

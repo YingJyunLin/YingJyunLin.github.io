@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Unpackaged.U商店</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="vegas/vegas.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Sans TC', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        .navbar {
+
+            width: 100%;
+            top: 0;
+            left: 0;
+            transition: .5s;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.918);
+            z-index: 1000;
+        }
+
+
+
+        .nav_logo {
+
+            width: 180px;
+        }
+
+        .navul li {
+            margin: 0 10px;
+        }
+
+
+        .navul li a {
+            padding: 5px;
+            font-weight: 300;
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: teal;
+        }
+
+        .navul li a:hover {
+            color: rgb(250, 192, 0);
+            background: url(images/navli.svg) center center no-repeat;
+            background-size: contain;
+        }
+
+        .now a {
+            color: rgb(250, 192, 0);
+            background: url(images/navli.svg) center center no-repeat;
+            background-size: contain;
+        }
+
+        .bg {
+            background: url(images/2.svg) center center no-repeat;
+            width: 100%;
+            height: calc( 100vh - 50px);
+            background-size: cover;
+
+        }
+
+        .tit {
+            margin-top: 40px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: teal;
+        }
+
+        .bb {
+            width: 90%;
+            height: 350px;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+
+        .b1 {
+
+            background: rgba(228, 228, 228, 0.082);
+            text-align: center;
+
+        }
+        
+        .b1 img {
+            width: 300px;
+        }
+
+
+        .b2 {
+            display: none;
+            background: rgba(255, 240, 240, 0.671);
+            opacity: 0.7;
+        }
+
+        .b3 {
+            display: none;
+            background: rgba(255, 243, 173, 0.801);
+            opacity: 0.7
+        }
+
+        .b4 {
+            display: none;
+            background: rgb(190, 218, 255);
+            opacity: 0.7
+        }
+
+        .b5 {
+            display: none;
+            background: rgb(255, 190, 239);
+            opacity: 0.7
+        }
+
+        .b6 {
+            display: none;
+            background: rgb(241, 247, 188);
+            opacity: 0.7
+        }
+
+        .b1 h3 {
+            line-height: 0px;
+            margin: 0 auto;
+            color: rgb(156, 156, 156);
+        }
+
+        .it {
+            justify-content: center;
+            height: 15vh;
+            width: 100%;
+        }
+
+        .it li {
+
+            padding: 20px;
+            cursor: pointer;
+
+        }
+
+
+        .bc li {
+
+            z-index: 20;
+
+        }
+
+        .ul1 {
+            flex-wrap: wrap;
+            width: 100%;
+
+        }
+
+        .ul1 li {
+            text-align: center;
+            padding: 20px;
+            width: 25%;
+            height: 110px;
+            color: chocolate;
+        }
+
+        .act {
+            color: palevioletred
+        }
+
+        .button {
+            width: 100%;
+            height: 150px;
+            margin: 5vh 0 0 0;
+            flex-wrap: nowrap;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .lb {
+            width: 20%;
+            height: 100px;
+            background: url(images/f4-01.svg) center center no-repeat;
+            display: block;
+
+        }
+
+        .rb {
+
+            width: 20%;
+            height: 100px;
+            background: url(images/f4-02.svg) center center no-repeat;
+            display: block;
+
+        }
+
+        .bu:hover {
+            cursor: pointer;
+            margin: 5px 0;
+        }
+
+        .footer {
+            height: 50px;
+            background: rgba(255, 244, 146, 0.746);
+            text-align: center;
+            color: teal;
+
+
+
+        }
+
+        @media screen and (max-width:768px){
+     
+
+        .lb {
+            width:30%;
+            
+
+        }
+
+        .rb {
+
+            width: 30%;
+           
+        }
+        .it li{
+            font-size: 0.9rem;
+        }
+
+        }
+        @media screen and  (max-width: 768px) and (min-width: 350px) {
+            .button{
+            width: 100%;
+            margin:100px 0 ;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .it li{
+            font-size: 0.8rem;
+        }
+        .lb{
+            width: 100%;
+            height: 100px;
+          
+      
+        }
+        .rb{
+            width:100%;
+            height: 100px;
+           
+        } 
+
+        .bu:hover {
+           
+            margin: 0 ;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="navbar d-flex">
+            <figure class="nav_logo">
+                <a href="home.html"> <img src="images/unnlogo.svg" alt=""></a>
+            </figure>
+            <ul class="navul d-flex list-unstyled">
+                
+                <li class="now con"><a href="">產品項目</a></li>
+                <li><a href="connect.html">聯絡我們</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="tit">
+                <h2>產品項目</h2>
+            </div>
+
+            <ul class="it d-flex">
+                <li class="l1"><img src="images/li-02.svg" alt="">堅果穀物</li>
+                <li class="l2"><img src="images/li-01.svg" alt="">各式香料</li>
+                <li class="l3"><img src="images/li-03.svg" alt="">果乾零食</li>
+                <li class="l4"><img src="images/li-04.svg" alt="">冷壓油類</li>
+                <li class="l5"><img src="images/li-05.svg" alt="">清潔產品
+            </ul>
+            <div class="sli">
+
+                <ul class="bc">
+                    <li class="sh0">
+                        <div class="b1 bb ">
+                            <img src="images/milk.svg" alt="">
+                            <h3>自備容器愛地球</h3>
+                        </div>
+                    </li>
+                    <li class="sh1">
+                        <div class="b2 bb ">
+                            
+                            
+                        </div>
+                    </li>
+                    <li class="sh2">
+                        <div class="b3 bb">
+
+                        </div>
+
+
+                    </li>
+                    <li class="sh3">
+                        <div class="b4 bb ">
+
+
+                        </div>
+                    </li>
+                    <li class="sh4">
+                        <div class="b5 bb "></div>
+                    </li>
+                    <li class="sh5">
+                        <div class="b6 bb"></div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="button d-flex">
+            <div class="lb bu " onclick="location.href='connect.html'"> </div>
+            <div class="rb bu "
+                onclick="window.open('https://shopee.tw/shop/53154318/search?originalCategoryId=15903&page=0')" > </div>
+        </div>
+
+    </div>
+    <div class=" footer">2016~2018 © USTORE. All right reserved.</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="vegas/vegas.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+
+
+
+        $(".navul li").mouseenter(function () {
+            $(this).addClass("now").siblings().removeClass("now")
+        })
+        $(".navul li").mouseleave(function () {
+            $(this).removeClass("now")
+            $(".con").addClass("now")
+        })
+
+        $(".navul li").mouseenter(function () {
+            $(this).addClass("now").siblings().removeClass("now")
+        })
+        $(".navul li").mouseleave(function () {
+            $(this).removeClass("now")
+            $(".con").addClass("now")
+        })
+
+
+
+
+        $(".l1").on('click', function a() {
+            $(".b3,.b4,.b5,.b6").hide()
+            if ($(".b1").css("display") == "none" && $(".b2").css("display") == "block") {
+                $(".b1").show()
+                $(".b2").hide()
+            }
+            else if ($(".b2").css("display") == "none") {
+                $(".b2").show()
+                $(".b1").hide()
+            }
+        })
+
+        $(".l2").on('click', function a() {
+            $(".b2,.b4,.b5,.b6").hide()
+            if ($(".b1").css("display") == "none" && $(".b3").css("display") == "block") {
+                $(".b1").show()
+                $(".b3").hide()
+            }
+            else if ($(".b3").css("display") == "none") {
+                $(".b3").show()
+                $(".b1").hide()
+            }
+        })
+
+        $(".l3").on('click', function a() {
+            $(".b2,.b3,.b5,.b6").hide()
+            if ($(".b1").css("display") == "none" && $(".b4").css("display") == "block") {
+                $(".b1").show()
+                $(".b4").hide()
+            }
+            else if ($(".b4").css("display") == "none") {
+                $(".b4").show()
+                $(".b1").hide()
+            }
+        })
+
+        $(".l4").on('click', function a() {
+            $(".b2,.b3,.b4,.b6").hide()
+            if ($(".b1").css("display") == "none" && $(".b5").css("display") == "block") {
+                $(".b1").show()
+                $(".b5").hide()
+            }
+            else if ($(".b5").css("display") == "none") {
+                $(".b5").show()
+                $(".b1").hide()
+            }
+        })
+
+        $(".l5").on('click', function a() {
+            $(".b2,.b3,.b4,.b5").hide()
+            if ($(".b1").css("display") == "none" && $(".b6").css("display") == "block") {
+                $(".b1").show()
+                $(".b6").hide()
+            }
+            else if ($(".b6").css("display") == "none") {
+                $(".b6").show()
+                $(".b1").hide()
+            }
+        })
+
+
+
+        $(".it li").click(function () {
+            $(this).toggleClass("act").siblings().removeClass("act")
+        })
+
+        $(".b2").vegas({
+            timer: false,
+            delay: 3000,
+            slides: [
+                { src: "images/b1.png" },
+                { src: "images/b2.png" }
+               
+            ]
+
+        });
+
+
+        $(".b3").vegas({
+            timer: false,
+            delay: 3000,
+            slides: [
+                { src: "images/s1.png" },
+                { src: "images/s2.png" },
+                { src: "images/s3.png" }
+        
+            ]
+
+        });
+
+        $(".b4").vegas({
+            timer: false,
+            delay: 5000,
+            slides: [
+                { src: "images/fr1.png" },
+                { src: "images/fr2.png" }
+
+            ]
+
+        });
+        $(".b5").vegas({
+            timer: false,
+            delay: 5000,
+            slides: [
+                { src: "images/o1.png" },
+                { src: "images/o2.png" }
+
+            ]
+
+        });
+        $(".b6").vegas({
+            timer: false,
+            delay: 5000,
+            slides: [
+                { src: "images/w1.png" },
+                { src: "images/w2.png" }
+
+            ]
+
+        });
+
+
+    </script>
+</body>
+
+</html>
